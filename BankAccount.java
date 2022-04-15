@@ -27,7 +27,7 @@ public class BankAccount {
         return this.firstName;
     }
 
-    public void setF_name(String firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
