@@ -32,7 +32,19 @@ public class BankAccountDriver {
         System.out.println("Monthly Interest Earnings: " + monthlyInterest);
         System.out.println("Account created on " + account.getDateCreated());
 
+        // create 3 choices for user input
+        int choice = 3;
 
+        // run this loop until user presses 2 to quit
+        while (choice != 2) {
+
+            //menu
+            System.out.print("\nEnter your choice (0: deposit, 1: withdraw, 2: quit): ");
+
+            //user input for choice
+            choice = userInput.nextInt();
+
+        }
 
     }
 
