@@ -7,8 +7,15 @@
   "password": "",
   "balance": "",
   "dateCreated": "",
-  "accountTypes": {
-    "regular": [
+  "accountTypes": [
+    "regular",
+    "business"
+  ],
+  "accountTypeInterest": [
+    {"regular": 2.5},
+    {"business":  5}
+  ],
+  "regular": [
       {"annualInterestRate": 2.5}
     ],
     "business": [
