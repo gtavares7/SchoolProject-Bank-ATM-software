@@ -7,7 +7,7 @@ public class BankAccountDriver {
         System.out.println("\nToday's Interest Rate is = " + BankAccount.getAnnualInterestRate() + "%");
 
         // create object for BankAccount
-        BankAccount account = new BankAccount(firstName, lastName, 0);
+        BankAccount account = new BankAccount("firstName", "lastName", 0);
 
         Scanner userInput = new Scanner(System.in);
 
