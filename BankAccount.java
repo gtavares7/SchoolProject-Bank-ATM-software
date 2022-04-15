@@ -1,10 +1,10 @@
-
 import java.util.*;
+
 public class BankAccount {
 
     private static final double annualInterestRate = 4.5;
-    private int nextAccountNb = 300;
-    private final int accountNb;
+    private int nextAccountNb;
+    private int accountNb;
     private String firstName;
     private String lastName;
     private double balance;
@@ -21,8 +21,13 @@ public class BankAccount {
         this.nextAccountNb++;
     }
 
+    // generate random number for accountNb
     public int getAccountNb() {
-        return this.accountNb;
+        int min = 100000;
+        int max = 500000;
+
+        accountNb = (int)Math.floor(Math.random()*(max-min+1)+min);
+        return accountNb;
     }
 
     // getter for firstName
