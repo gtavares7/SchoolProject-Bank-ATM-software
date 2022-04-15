@@ -19,4 +19,40 @@ public class BankAccount {
         this.nextAccountNb++;
     }
 
+    public int getAccountNb() {
+        return this.accountNb;
+    }
+
+    public String getFirstName() {
+        return this.firstName;
+    }
+
+    public void setF_name(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return this.lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public double balance() {
+        return this.balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public static double getAnnualInterestRate() {
+        return annualInterestRate;
+    }
+
+    public Date getDateCreated() {
+        return dateCreated;
+    }
+
 }
