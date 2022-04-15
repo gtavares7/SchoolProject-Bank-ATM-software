@@ -44,6 +44,15 @@ public class BankAccountDriver {
             //user input for choice
             choice = userInput.nextInt();
 
+            // if user presses 0 to deposit
+            if (choice == 0) {
+                System.out.println("Enter amount to deposit");
+                double deposit = userInput.nextDouble();
+                double balance = account.getBalance();
+                account.setBalance(balance + deposit);
+            }
+
+
         }
 
     }
