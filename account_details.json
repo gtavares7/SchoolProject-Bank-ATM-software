@@ -1,0 +1,16 @@
+
+{
+  "accountNb": "",
+  "firstName": "",
+  "lastName": "",
+  "username": "",
+  "password": "",
+  "balance": "",
+  "dateCreated": ""
+},
+"accountTypes": [
+    "regular",
+    "business",
+],
+
+
