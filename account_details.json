@@ -6,11 +6,15 @@
   "username": "",
   "password": "",
   "balance": "",
-  "dateCreated": ""
-},
-"accountTypes": [
-    "regular",
-    "business",
-],
+  "dateCreated": "",
+  "accountTypes": {
+    "regular": [
+      {"annualInterestRate": 2.5}
+    ],
+    "business": [
+      {"annualInterestRate": 5}
+    ]
+  }
+}
 
 
