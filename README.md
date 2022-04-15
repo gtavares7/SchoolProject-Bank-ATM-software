@@ -16,9 +16,10 @@ WHAT IT DOES:
 ```
 To DO:
 1. prompt user for username and password creation
-2. Store all account info in a separate file for logins
-3. Add start menu asking to log in or create new account
-4. Create welcoming message upon login
-5. Allow for cash to be sent between usernames
-6. More to come...
+2. Add different account types and interest rates
+3. Store all account info in a separate json file for logins
+4. Add start menu asking to log in or create new account
+5. Create welcoming message upon login
+6. Allow for cash to be sent between usernames
+7. More to come...
 ```
