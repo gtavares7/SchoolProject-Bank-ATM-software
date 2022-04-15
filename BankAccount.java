@@ -1,3 +1,9 @@
+import org.json.simple.JSONObject;
+
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.*;
 
 public class BankAccount {
@@ -75,6 +81,36 @@ public class BankAccount {
         double rate = (annualInterestRate / 100) / 12;
         monthlyInterest = (getBalance() * rate);
         return monthlyInterest;
+    }
+
+    // method to read/write to .json file
+    public static void json() {
+
+        try {
+
+            // create a writer
+            BufferedWriter writer = Files.newBufferedWriter(Paths.get("account_details.json"));
+
+            // create customer object
+            JSONObject customer = new JSONObject();
+            customer.put("accountNb", 1);
+            customer.put("firstName", "");
+            customer.put("lastName", "");
+            customer.put("username", "");
+            customer.put("password", "");
+            customer.put("balance", 1);
+            customer.put("dateCreated", "");
+
+            // create accountType object
+            JSONObject accountType = new JSONObject();
+            customer.put("", "");
+
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
 }
