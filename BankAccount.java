@@ -5,6 +5,7 @@ public class BankAccount {
     private static final double annualInterestRate = 4.5;
     private int nextAccountNb;
     private int accountNb;
+    private String accountType;
     private String firstName;
     private String lastName;
     private double balance;
