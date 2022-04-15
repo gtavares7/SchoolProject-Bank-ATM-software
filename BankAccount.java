@@ -9,6 +9,7 @@ public class BankAccount {
     private String lastName;
     private double balance;
     private final Date dateCreated;
+    private double monthlyInterest;
 
     // constructor
     BankAccount (String firstName, String lastName, double balance) {
@@ -62,6 +63,12 @@ public class BankAccount {
     // getter for dateCreated
     public Date getDateCreated() {
         return dateCreated;
+    }
+
+    public double getMonthlyInterest() {
+        double rate = (annualInterestRate / 100) / 12;
+        monthlyInterest = (getBalance() * rate);
+        return monthlyInterest;
     }
 
 }
