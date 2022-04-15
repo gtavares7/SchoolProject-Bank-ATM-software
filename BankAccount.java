@@ -39,7 +39,7 @@ public class BankAccount {
         this.lastName = lastName;
     }
 
-    public double balance() {
+    public double getBalance() {
         return this.balance;
     }
 
