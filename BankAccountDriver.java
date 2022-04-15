@@ -49,6 +49,8 @@ public class BankAccountDriver {
                 double deposit = userInput.nextDouble();
                 double balance = account.getBalance();
                 account.setBalance(balance + deposit);
+                System.out.println("\nNew balance is: $" + account.getBalance());
+                System.out.println("Monthly Interest Earnings: $" + account.getMonthlyInterest());
             }
 
             // if user presses 1 to withdraw
@@ -56,6 +58,8 @@ public class BankAccountDriver {
                 System.out.println("Enter amount to withdraw");
                 double withdraw = userInput.nextDouble();
                 double balance = account.getBalance();
+                System.out.println("\nNew balance is: $" + account.getBalance());
+                System.out.println("Monthly interest earned: $" + account.getMonthlyInterest());
 
                 if (withdraw <= balance) {
                     account.setBalance(balance - withdraw);
@@ -66,7 +70,7 @@ public class BankAccountDriver {
         }
         // if user presses 2 to quit
         System.out.println("\nNew balance is $"+ account.getBalance());
-        System.out.println("Monthly Interest Earnings: $" + account.getMonthlyInterest() + "\nGood-Bye!");
+        System.out.println("Monthly interest earnings: $" + account.getMonthlyInterest() + "\nGood-Bye!");
     }
 
 }
