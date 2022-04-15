@@ -52,9 +52,21 @@ public class BankAccountDriver {
                 account.setBalance(balance + deposit);
             }
 
+            // if user presses 1 to withdraw
+            else if (choice == 1) {
+                System.out.println("Enter amount to withdraw");
+                double withdraw = userInput.nextDouble();
+                double balance = account.getBalance();
 
+                if (withdraw <= balance) {
+                    account.setBalance(balance - withdraw);
+                } else {
+                    System.out.println("WARNING: INSUFFICIENT BALANCE");
+                }
+            }
         }
-
+        // if user presses 2 to quit
+        System.out.println("\nNew balance is $"+ account.getBalance() + "\nGood-Bye!");
     }
 
 }
