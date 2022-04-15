@@ -26,6 +26,7 @@ public class BankAccountDriver {
         System.out.println("You account details are:");
         System.out.println("Name is: " + account.getFirstName() + "" + account.getLastName());
         System.out.println("Account number is: " + account.getAccountNb());
+        // System.out.println("Account type: " + accountType);
         System.out.println("Current balance is $" + account.getBalance());
         System.out.println("Interest rate: " + BankAccount.getAnnualInterestRate());
         System.out.println("Monthly Interest Earnings: " + account.getMonthlyInterest());
