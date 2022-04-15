@@ -22,6 +22,18 @@ public class BankAccountDriver {
         account.setFirstName(firstName);
         account.setLastName(lastName);
         double monthlyInterest = (account.getBalance() * BankAccount.getAnnualInterestRate() / 100) / 12;
+
+        // BankAccount Details
+        System.out.println("You account details are:");
+        System.out.println("Name is: " + account.getFirstName() + "" + account.getLastName());
+        System.out.println("Account number is: " + account.getAccountNb());
+        System.out.println("Current balance is $" + account.getBalance());
+        System.out.println("Interest rate: " + BankAccount.getAnnualInterestRate());
+        System.out.println("Monthly Interest Earnings: " + monthlyInterest);
+        System.out.println("Account created on " + account.getDateCreated());
+
+
+
     }
 
 }
