@@ -1,11 +1,4 @@
-import org.json.simple.JSONObject;
 
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.Reader;
-import java.math.BigDecimal;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.*;
 
 public class BankAccount {
@@ -83,73 +76,6 @@ public class BankAccount {
         double rate = (annualInterestRate / 100) / 12;
         monthlyInterest = (getBalance() * rate);
         return monthlyInterest;
-    }
-
-    // method to read/write to .json file
-    public static void writeJson() {
-
-        try {
-
-            // create a writer
-            BufferedWriter writer = Files.newBufferedWriter(Paths.get("account_details.json"));
-
-            // create customer object
-            JSONObject customer = new JSONObject();
-            customer.put("accountNb", 1);
-            customer.put("firstName", "");
-            customer.put("lastName", "");
-            customer.put("username", "");
-            customer.put("password", "");
-            customer.put("balance", 1);
-            customer.put("dateCreated", "");
-
-            // create accountType object
-            JSONObject accountType = new JSONObject();
-            accountType.put("", "");
-
-            // add accountType to customer
-            customer.put("accountType", accountType);
-
-            // write JSON to file
-            Jsoner.serialize(customer, writer);
-
-            // close the writer
-            writer.close();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static void readJson() {
-        try {
-
-            // create a reader
-            Reader reader = Files.newBufferedReader(Paths.get("account_details.json"));
-
-            // create parser
-            JSONObject parser = (JSONObject) Jsoner.deserialize(reader);
-
-            // read account details
-            BigDecimal accountNb = (BigDecimal) parser.get("accountNb");
-            String firstName = (String) parser.get("firstName");
-            String lastName = (String) parser.get("lastName");
-            String username = (String) parser.get("username");
-            String password = (String) parser.get("password");
-            BigDecimal balance = (BigDecimal) parser.get("balance");
-            String dateCreated = (String) parser.get("dateCreated");
-
-            // read accountType
-            Map<Object, Object> accountType = (Map<Object, Object>) parser.get("accountType");
-            accountType.forEach((key, value) -> System.out.println(key + ":" + value));
-
-            // close reader
-            reader.close();
-
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
 }
