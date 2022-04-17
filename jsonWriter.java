@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 
 public class jsonWriter {
 
-    // method to read/write to .json file
+    // method to write to .json file
     public static void writeJson() {
 
         try {
