@@ -9,6 +9,7 @@ import java.util.Map;
 
 public class jsonReader {
 
+    // method to read from .json file
     public static void readJson() {
 
         try {
