@@ -6,6 +6,7 @@ import java.io.IOException;
 
 public class jsonWriterTest {
 
+    @SuppressWarnings("unchecked")
     public static void writeJson() {
 
         // first account
