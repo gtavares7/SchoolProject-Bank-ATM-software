@@ -59,6 +59,7 @@ public class jsonReaderTest {
 
         // get account holder
         BigDecimal balance = (BigDecimal) accountObject.get("balance");
+        System.out.println(balance);
 
         // get account dateCreated
         String dateCreated = (String) accountObject.get("dateCreated");
