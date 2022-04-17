@@ -9,7 +9,7 @@ public class jsonWriterTest {
     @SuppressWarnings("unchecked")
     public static void writeJson() {
 
-        // first account
+        // create first account object
         JSONObject accountDetails = new JSONObject();
         accountDetails.put("accountNb", 1);
         accountDetails.put("firstName", "");
@@ -22,7 +22,7 @@ public class jsonWriterTest {
         JSONObject accountObject = new JSONObject();
         accountObject.put("account", accountDetails);
 
-        // second account
+        // create second account object
         JSONObject accountDetails2 = new JSONObject();
         accountDetails2.put("accountNb", 1);
         accountDetails2.put("firstName", "");
@@ -35,7 +35,7 @@ public class jsonWriterTest {
         JSONObject accountObject2 = new JSONObject();
         accountObject2.put("account", accountDetails2);
 
-        // third account
+        // create third account object
         JSONObject accountDetails3 = new JSONObject();
         accountDetails3.put("accountNb", 1);
         accountDetails3.put("firstName", "");
