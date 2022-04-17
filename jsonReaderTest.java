@@ -6,6 +6,7 @@ import org.json.simple.parser.ParseException;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.math.BigDecimal;
 
 public class jsonReaderTest {
 
@@ -40,11 +41,32 @@ public class jsonReaderTest {
         // get account object within list
         JSONObject accountObject = (JSONObject) account.get("account");
 
+        // get account number
+        String accountNb = (String) accountObject.get("accountNb");
+        System.out.println(accountNb);
+
         // get account holder first name
+        String firstName = (String) accountObject.get("firstName");
+        System.out.println(firstName);
 
         // get account holder last name
+        String lastName = (String) accountObject.get("lastName");
+        System.out.println(lastName);
+
+        // get account holder username
+        String username = (String) accountObject.get("username");
+        System.out.println(username);
 
         // get account holder
+        BigDecimal balance = (BigDecimal) accountObject.get("balance");
+
+        // get account dateCreated
+        String dateCreated = (String) accountObject.get("dateCreated");
+        System.out.println(dateCreated);
+
+        // get account type
+        String accountType = (String) accountObject.get("accountType");
+        System.out.println(accountType);
 
     }
 
