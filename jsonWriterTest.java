@@ -29,7 +29,7 @@ public class jsonWriterTest {
         accountNbObject.put("accountNb", accountDetails);
 
         JSONObject accountObject = new JSONObject();
-        accountNbObject.put("account", accountNbObject);
+        accountObject.put("account", accountNbObject);
 
 
         // create second account object
