@@ -1,0 +1,16 @@
+[
+  {
+    "account":
+    {
+      "accountNb":
+      {
+        "firstName":"Gabriel",
+        "lastName":"Tavares",
+        "password":"abcd1234",
+        "dateCreated":"17\/04\/2022",
+        "balance":1000,
+        "username":"Tavares7"
+      }
+    }
+  }
+]
