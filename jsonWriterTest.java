@@ -25,8 +25,12 @@ public class jsonWriterTest {
         // add accountType to customer
         // accountDetails.put("accountType", accountType);
 
+        JSONObject accountNbObject = new JSONObject();
+        accountNbObject.put("accountNb", accountDetails);
+
         JSONObject accountObject = new JSONObject();
-        accountObject.put("account", accountDetails);
+        accountNbObject.put("account", accountNbObject);
+
 
         // create second account object
         /* JSONObject accountDetails2 = new JSONObject();
