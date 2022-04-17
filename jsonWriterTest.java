@@ -11,7 +11,7 @@ public class jsonWriterTest {
 
         // create first account object
         JSONObject accountDetails = new JSONObject();
-        accountDetails.put("accountNb", 256834);
+        // accountDetails.put("accountNb", 256834);
         accountDetails.put("firstName", "Gabriel");
         accountDetails.put("lastName", "Tavares");
         accountDetails.put("username", "Tavares7");
@@ -65,7 +65,7 @@ public class jsonWriterTest {
         // accountList.add(accountObject3);
 
         // write JSON file
-        try (FileWriter file = new FileWriter("account_details_test.json")) {
+        try (FileWriter file = new FileWriter("account_details_test2.json")) {
             file.write(accountList.toJSONString());
             file.flush();
 
