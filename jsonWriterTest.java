@@ -11,7 +11,7 @@ public class jsonWriterTest {
 
         // create first account object
         JSONObject accountDetails = new JSONObject();
-        accountDetails.put("accountNb", 1);
+        accountDetails.put("accountNb", 256834);
         accountDetails.put("firstName", "Gabriel");
         accountDetails.put("lastName", "Tavares");
         accountDetails.put("username", "Tavares7");
