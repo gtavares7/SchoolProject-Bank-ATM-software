@@ -20,16 +20,16 @@ public class jsonWriterTest {
         accountDetails.put("dateCreated", "17/04/2022");
 
         // create accountType object within accountDetails
-        JSONObject accountType = new JSONObject();
-        accountType.put("Business", "");
+        // JSONObject accountType = new JSONObject();
+        // accountType.put("Business", "");
         // add accountType to customer
-        accountDetails.put("accountType", accountType);
+        // accountDetails.put("accountType", accountType);
 
         JSONObject accountObject = new JSONObject();
         accountObject.put("account", accountDetails);
 
         // create second account object
-        JSONObject accountDetails2 = new JSONObject();
+        /* JSONObject accountDetails2 = new JSONObject();
         accountDetails2.put("accountNb", 1);
         accountDetails2.put("firstName", "");
         accountDetails2.put("lastName", "");
@@ -52,16 +52,16 @@ public class jsonWriterTest {
         accountDetails3.put("dateCreated", "");
 
         JSONObject accountObject3 = new JSONObject();
-        accountObject3.put("account", accountDetails3);
+        accountObject3.put("account", accountDetails3); */
 
         // add accounts to list
         JSONArray accountList = new JSONArray();
         accountList.add(accountObject);
-        accountList.add(accountObject2);
-        accountList.add(accountObject3);
+        // accountList.add(accountObject2);
+        // accountList.add(accountObject3);
 
         // write JSON file
-        try (FileWriter file = new FileWriter("account_details.json")) {
+        try (FileWriter file = new FileWriter("account_details_test.json")) {
             file.write(accountList.toJSONString());
             file.flush();
 

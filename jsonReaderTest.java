@@ -16,7 +16,7 @@ public class jsonReaderTest {
         // create parser object to read file
         JSONParser jsonParser = new JSONParser();
 
-        try (FileReader reader = new FileReader("account_details.json")) {
+        try (FileReader reader = new FileReader("account_details_test.json")) {
 
             // read JSON file
             Object obj = jsonParser.parse(reader);
@@ -66,8 +66,8 @@ public class jsonReaderTest {
         System.out.println(dateCreated);
 
         // get account type
-        String accountType = (String) accountObject.get("accountType");
-        System.out.println(accountType);
+        // String accountType = (String) accountObject.get("accountType");
+        // System.out.println(accountType);
 
     }
 
