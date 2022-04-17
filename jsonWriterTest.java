@@ -1,6 +1,5 @@
 import org.json.simple.JSONObject;
 import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -51,8 +50,14 @@ public class jsonWriterTest {
         accountList.add(accountObject2);
         accountList.add(accountObject3);
 
-        
+        // write JSON file
+        try (FileWriter file = new FileWriter("account_details.json")) {
+            file.write(accountList.toJSONString());
+            file.flush();
 
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }
