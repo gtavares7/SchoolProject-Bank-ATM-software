@@ -35,4 +35,17 @@ public class jsonReaderTest {
         }
     }
 
+    private static void parseAccountObject(JSONObject account) {
+
+        // get account object within list
+        JSONObject accountObject = (JSONObject) account.get("account");
+
+        // get account holder first name
+
+        // get account holder last name
+
+        // get account holder
+
+    }
+
 }
