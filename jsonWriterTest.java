@@ -7,21 +7,21 @@ import java.io.IOException;
 public class jsonWriterTest {
 
     @SuppressWarnings("unchecked")
-    public static void writeJson() {
+    public static void main(String[] args) {
 
         // create first account object
         JSONObject accountDetails = new JSONObject();
         accountDetails.put("accountNb", 1);
-        accountDetails.put("firstName", "");
-        accountDetails.put("lastName", "");
-        accountDetails.put("username", "");
-        accountDetails.put("password", "");
-        accountDetails.put("balance", 1);
-        accountDetails.put("dateCreated", "");
+        accountDetails.put("firstName", "Gabriel");
+        accountDetails.put("lastName", "Tavares");
+        accountDetails.put("username", "Tavares7");
+        accountDetails.put("password", "abcd1234");
+        accountDetails.put("balance", 1000);
+        accountDetails.put("dateCreated", "17/04/2022");
 
         // create accountType object within accountDetails
         JSONObject accountType = new JSONObject();
-        accountType.put("", "");
+        accountType.put("Business", "");
         // add accountType to customer
         accountDetails.put("accountType", accountType);
 
