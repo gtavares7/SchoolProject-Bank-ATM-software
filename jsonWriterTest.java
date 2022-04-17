@@ -14,6 +14,7 @@ public class jsonWriterTest {
         accountDetails.put("accountNb", 1);
         accountDetails.put("firstName", "");
         accountDetails.put("lastName", "");
+        accountDetails.put("username", "");
         accountDetails.put("password", "");
         accountDetails.put("balance", 1);
         accountDetails.put("dateCreated", "");
@@ -26,6 +27,7 @@ public class jsonWriterTest {
         accountDetails2.put("accountNb", 1);
         accountDetails2.put("firstName", "");
         accountDetails2.put("lastName", "");
+        accountDetails2.put("username", "");
         accountDetails2.put("password", "");
         accountDetails2.put("balance", 1);
         accountDetails2.put("dateCreated", "");
@@ -38,6 +40,7 @@ public class jsonWriterTest {
         accountDetails3.put("accountNb", 1);
         accountDetails3.put("firstName", "");
         accountDetails3.put("lastName", "");
+        accountDetails3.put("username", "");
         accountDetails3.put("password", "");
         accountDetails3.put("balance", 1);
         accountDetails3.put("dateCreated", "");
