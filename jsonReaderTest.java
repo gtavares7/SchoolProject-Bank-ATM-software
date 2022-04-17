@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 public class jsonReaderTest {
 
     @SuppressWarnings("unchecked")
-    public static void readJson() {
+    public static void main(String[] args) {
 
         // create parser object to read file
         JSONParser jsonParser = new JSONParser();
