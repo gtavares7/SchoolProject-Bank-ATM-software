@@ -42,7 +42,7 @@ public class jsonWriterTest {
         accountDetails2.put("dateCreated", "17-04-2022");
 
         JSONObject accountNbObject2 = new JSONObject();
-        accountNbObject.put("accountNb", accountDetails2);
+        accountNbObject.put("accountNb-2", accountDetails2);
 
         JSONObject accountObject2 = new JSONObject();
         accountObject.put("account", accountNbObject2);
@@ -61,7 +61,7 @@ public class jsonWriterTest {
         accountDetails3.put("dateCreated", "18-04-2022");
 
         JSONObject accountNbObject3 = new JSONObject();
-        accountNbObject.put("accountNb", accountDetails3);
+        accountNbObject.put("accountNb-3", accountDetails3);
 
         JSONObject accountObject3 = new JSONObject();
         accountObject.put("account", accountNbObject3);
