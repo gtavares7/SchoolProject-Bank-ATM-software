@@ -42,10 +42,10 @@ public class jsonWriterTest {
         accountDetails2.put("dateCreated", "17-04-2022");
 
         JSONObject accountNbObject2 = new JSONObject();
-        accountNbObject.put("accountNb-2", accountDetails2);
+        accountNbObject2.put("accountNb-2", accountDetails2);
 
         JSONObject accountObject2 = new JSONObject();
-        accountObject.put("account-2", accountNbObject2);
+        accountObject2.put("account-2", accountNbObject2);
 
         // JSONObject accountObject2 = new JSONObject();
         // accountObject2.put("account", accountDetails2);
@@ -70,7 +70,7 @@ public class jsonWriterTest {
         // accountList.add(accountObject3);
 
         // write JSON file
-        try (FileWriter file = new FileWriter("account_details_test4.json")) {
+        try (FileWriter file = new FileWriter("account_details_test5.json")) {
             file.write(accountList.toJSONString());
             file.flush();
 
