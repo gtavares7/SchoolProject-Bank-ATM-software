@@ -20,10 +20,10 @@ public class jsonWriterTest {
         accountDetails.put("dateCreated", "17-04-2022");
 
         // create accountType object within accountDetails
-        // JSONObject accountType = new JSONObject();
-        // accountType.put("Business", "");
+        /* JSONObject accountType = new JSONObject();
+        accountType.put("Business", "");
         // add accountType to customer
-        // accountDetails.put("accountType", accountType);
+        accountDetails.put("accountType", accountType); */
 
         JSONObject accountNbObject = new JSONObject();
         accountNbObject.put("accountNb", accountDetails);
