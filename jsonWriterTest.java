@@ -70,7 +70,7 @@ public class jsonWriterTest {
         // accountList.add(accountObject3);
 
         // write JSON file
-        try (FileWriter file = new FileWriter("account_details_test5.json")) {
+        try (FileWriter file = new FileWriter("account_details_test4.json")) {
             file.write(accountList.toJSONString());
             file.flush();
 
