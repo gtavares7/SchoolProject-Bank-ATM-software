@@ -45,7 +45,7 @@ public class jsonWriterTest {
         accountNbObject2.put("accountNb-2", accountDetails2);
 
         JSONObject accountObject2 = new JSONObject();
-        accountObject2.put("account-2", accountNbObject2);
+        accountObject2.put("account", accountNbObject2);
 
         // JSONObject accountObject2 = new JSONObject();
         // accountObject2.put("account", accountDetails2);
