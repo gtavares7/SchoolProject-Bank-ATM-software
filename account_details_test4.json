@@ -1,9 +1,5 @@
 [
   {
-    "account-2":
-    {
-
-    },
     "account":
     {
       "accountNb":
@@ -14,7 +10,12 @@
         "dateCreated":"17-04-2022",
         "balance":1000,
         "username":"Tavares7"
-      },
+      }
+    }
+  },
+  {
+    "account-2":
+    {
       "accountNb-2":
       {
         "firstName":"Eduardo",
@@ -25,8 +26,5 @@
         "username":"eddy"
       }
     }
-  },
-  {
-
   }
 ]
