@@ -1,1 +1,49 @@
-[{"account":{}},{},{}]
+[
+  {
+    "account-3":
+    {
+
+    },
+    "account-2":
+    {
+
+    },
+    "account":
+    {
+      "accountNb":
+      {
+        "firstName":"Gabriel",
+        "lastName":"Tavares",
+        "password":"abcd1234",
+        "dateCreated":"17-04-2022",
+        "balance":1000,
+        "username":"Tavares7"
+      },
+      "accountNb-3":
+      {
+        "firstName":"Vincent",
+        "lastName":"Mariani",
+        "password":"abcd1234",
+        "dateCreated":"18-04-2022",
+        "balance":1000,
+        "username":"vince"
+      },
+      "accountNb-2":
+      {
+        "firstName":"Eduardo",
+        "lastName":"Mazzonna",
+        "password":"abcd1234",
+        "dateCreated":"17-04-2022",
+        "balance":1000,
+        "username":"eddy"
+      }
+    }
+  }
+,
+  {
+
+  },
+  {
+
+  }
+]
