@@ -45,14 +45,14 @@ public class jsonWriterTest {
         accountNbObject.put("accountNb-2", accountDetails2);
 
         JSONObject accountObject2 = new JSONObject();
-        accountObject.put("account", accountNbObject2);
+        accountObject.put("account-2", accountNbObject2);
 
         // JSONObject accountObject2 = new JSONObject();
         // accountObject2.put("account", accountDetails2);
 
         // create third account object
-        JSONObject accountDetails3 = new JSONObject();
-        // accountDetails3.put("accountNb", 1);
+        /* JSONObject accountDetails3 = new JSONObject();
+        accountDetails3.put("accountNb", 1);
         accountDetails3.put("firstName", "Vincent");
         accountDetails3.put("lastName", "Mariani");
         accountDetails3.put("username", "vince");
@@ -60,23 +60,17 @@ public class jsonWriterTest {
         accountDetails3.put("balance", 1000);
         accountDetails3.put("dateCreated", "18-04-2022");
 
-        JSONObject accountNbObject3 = new JSONObject();
-        accountNbObject.put("accountNb-3", accountDetails3);
-
         JSONObject accountObject3 = new JSONObject();
-        accountObject.put("account", accountNbObject3);
-
-        // JSONObject accountObject3 = new JSONObject();
-        // accountObject3.put("account", accountDetails3);
+        accountObject3.put("account", accountDetails3); */
 
         // add accounts to list
         JSONArray accountList = new JSONArray();
         accountList.add(accountObject);
         accountList.add(accountObject2);
-        accountList.add(accountObject3);
+        // accountList.add(accountObject3);
 
         // write JSON file
-        try (FileWriter file = new FileWriter("account_details_test3.json")) {
+        try (FileWriter file = new FileWriter("account_details_test4.json")) {
             file.write(accountList.toJSONString());
             file.flush();
 
@@ -84,5 +78,4 @@ public class jsonWriterTest {
             e.printStackTrace();
         }
     }
-
 }
